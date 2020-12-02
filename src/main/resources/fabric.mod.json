@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "portalreloaded",
+	"version": "${version}",
+	"name": "Portalreloaded",
+	"description": "Ever wanted a Companion Cube?",
+	"authors": [
+		"ENDERZOMBI102"
+	],
+	"contact": {
+		"repo": "https://github.com/ENDERZOMBI102/PortalReloaded"
+	},
+	"license": "MIT",
+	"icon": "assets/portalreloaded/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.enderzombi102.portalreloaded.client.PortalreloadedClient"
+		],
+		"main": [
+			"com.enderzombi102.portalreloaded.Portalreloaded"
+		]
+	},
+	"mixins": [
+		"portalreloaded.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.10.8",
+		"fabric": "*",
+		"minecraft": "1.16.4",
+		"immersive_portals": "0.49"
+	}
+}
